@@ -8,13 +8,9 @@ def add_prompt(prompt):
     prompt_list.append(prompt)
     
 def write_prompts(prompts):
-    if prompts isinstance(prompts, List):
-        for prompt in prompts:
-            add_prompt(prompt)
-            pyscript.write(prompt)
-    else:
-        add_prompt(prompts)
-        pyscript.write(prompts)
+    for prompt in prompts:
+        add_prompt(prompt)
+        pyscript.write(prompt)
 
 add_new_prompt = create_proxy(add_prompt)
 print_prompts = create_proxy(write_prompts)
