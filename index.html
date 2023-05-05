@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Chat to Notes</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="https://pyscript.net/releases/2023.03.1/pyscript.css" />
+    <script defer src="https://pyscript.net/releases/2023.03.1/pyscript.js"></script>
+</head>
+<body>
+    <div>
+        <h1>Chat to Notes</h1>
+        <form action="post">
+            <textarea id="input_area"></textarea>
+            <button id="sendBtn">Send</button>
+        </form>
+    </div>
+    <div id="output">
+
+    </div>
+    <py-config src="./pyscript.toml"></py-config>
+    <py-script src="./main.py"></py-script>
+</body>
+</html>
